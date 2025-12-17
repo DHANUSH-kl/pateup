@@ -1,0 +1,417 @@
+<html lang="en" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plateup.solutions | Swiggy &amp; Zomato Optimization Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Space+Grotesk:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Space Grotesk', sans-serif;
+            letter-spacing: -0.04em;
+        }
+        .grain-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 50;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+        .clip-slant {
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="bg-zinc-50 text-zinc-900 selection:bg-orange-500 selection:text-white overflow-x-hidden">
+
+    <!-- Grain Overlay for texture -->
+    <div class="grain-overlay"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-40 bg-white/80 backdrop-blur-md border-b border-zinc-100">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-lg font-semibold tracking-tighter flex items-center gap-2">
+                <span class="iconify text-orange-600" data-icon="lucide:utensils-crossed" data-width="20"></span>
+                PLATEUP.SOLUTIONS
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-500">
+                <a href="#problem" class="hover:text-zinc-900 transition-colors">The Problem</a>
+                <a href="#solution" class="hover:text-zinc-900 transition-colors">Our Approach</a>
+                <a href="#results" class="hover:text-zinc-900 transition-colors">Results</a>
+            </div>
+
+            <a href="#audit" class="hidden md:flex items-center gap-2 bg-zinc-900 text-white px-4 py-2 rounded-full text-xs font-medium hover:bg-orange-600 transition-colors">
+                Book Audit
+                <span class="iconify" data-icon="lucide:arrow-right" data-width="14"></span>
+            </a>
+
+            <!-- Mobile Menu Icon -->
+            <button class="md:hidden text-zinc-900">
+                <span class="iconify" data-icon="lucide:menu" data-width="24"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-orange-50 to-transparent -z-10"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-orange-200 rounded-full blur-[100px] opacity-30 -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+            
+            <!-- Hero Copy -->
+            <div class="max-w-2xl z-10">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 text-orange-700 text-xs font-medium mb-6 border border-orange-200">
+                    <span class="iconify" data-icon="lucide:trending-up" data-width="14"></span>
+                    Stop burning money on ads
+                </div>
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.1] mb-6 text-zinc-900">
+                    Turn Swiggy &amp; Zomato Into Your <span class="text-orange-600">Revenue Engine</span>.
+                </h1>
+                <p class="text-lg md:text-xl text-zinc-500 mb-8 leading-relaxed max-w-lg">
+                    We optimize your restaurant listings to skyrocket visibility, clicks, and orders through algorithm psychology—without the heavy discounts.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#audit" class="flex items-center justify-center gap-2 bg-orange-600 text-white px-8 py-4 rounded-lg font-medium hover:bg-orange-700 transition-all hover:shadow-lg hover:shadow-orange-200/50">
+                        Get Free Account Audit
+                        <span class="iconify" data-icon="lucide:arrow-right" data-width="18"></span>
+                    </a>
+                    <a href="#solution" class="flex items-center justify-center gap-2 bg-white border border-zinc-200 text-zinc-900 px-8 py-4 rounded-lg font-medium hover:bg-zinc-50 transition-colors">
+                        How it works
+                    </a>
+                </div>
+                <div class="mt-8 flex items-center gap-4 text-xs text-zinc-400 font-medium">
+                    <div class="flex -space-x-2">
+                        <div class="w-8 h-8 rounded-full bg-zinc-200 border-2 border-white"></div>
+                        <div class="w-8 h-8 rounded-full bg-zinc-300 border-2 border-white"></div>
+                        <div class="w-8 h-8 rounded-full bg-zinc-400 border-2 border-white"></div>
+                    </div>
+                    <p>Trusted by 50+ growth-focused kitchens</p>
+                </div>
+            </div>
+
+            <!-- Hero Visual / Dashboard Abstraction -->
+            <div class="relative lg:h-[600px] flex items-center justify-center">
+                <!-- Main Card -->
+                <div class="relative w-full max-w-md bg-white rounded-2xl shadow-2xl border border-zinc-100 p-6 z-20 rotate-1 hover:rotate-0 transition-transform duration-500">
+                    <div class="flex items-center justify-between mb-6">
+                        <div>
+                            <p class="text-xs text-zinc-400 font-medium uppercase tracking-wider">Total Orders</p>
+                            <h3 class="text-3xl font-semibold text-zinc-900">1,248 <span class="text-sm text-green-500 font-normal">+32%</span></h3>
+                        </div>
+                        <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center text-orange-600">
+                            <span class="iconify" data-icon="lucide:shopping-bag" data-width="20"></span>
+                        </div>
+                    </div>
+                    <!-- Mock Graph -->
+                    <div class="h-32 flex items-end justify-between gap-2 mb-6">
+                        <div class="w-full bg-zinc-100 rounded-t h-[40%]"></div>
+                        <div class="w-full bg-zinc-100 rounded-t h-[30%]"></div>
+                        <div class="w-full bg-zinc-100 rounded-t h-[50%]"></div>
+                        <div class="w-full bg-zinc-100 rounded-t h-[45%]"></div>
+                        <div class="w-full bg-orange-200 rounded-t h-[70%] relative group">
+                             <div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-zinc-900 text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Plateup</div>
+                        </div>
+                        <div class="w-full bg-orange-500 rounded-t h-[95%]"></div>
+                        <div class="w-full bg-orange-600 rounded-t h-[85%]"></div>
+                    </div>
+                    
+                    <!-- Notification Popups -->
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3 p-3 bg-zinc-50 rounded-lg border border-zinc-100">
+                            <div class="w-8 h-8 rounded bg-green-100 flex items-center justify-center text-green-600">
+                                <span class="iconify" data-icon="lucide:eye" data-width="16"></span>
+                            </div>
+                            <div class="text-xs">
+                                <p class="font-medium text-zinc-900">Visibility Score Increased</p>
+                                <p class="text-zinc-500">Ranked #3 in "Biryani" category</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-zinc-50 rounded-lg border border-zinc-100">
+                            <div class="w-8 h-8 rounded bg-blue-100 flex items-center justify-center text-blue-600">
+                                <span class="iconify" data-icon="lucide:mouse-pointer-click" data-width="16"></span>
+                            </div>
+                            <div class="text-xs">
+                                <p class="font-medium text-zinc-900">Menu Click-Through Rate</p>
+                                <p class="text-zinc-500">Optimized photos driving clicks</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating Elements -->
+                <div class="absolute top-20 -right-4 w-48 bg-zinc-900 text-white p-4 rounded-xl shadow-xl z-30 -rotate-3">
+                    <p class="text-xs text-zinc-400 mb-1">Conversion Rate</p>
+                    <div class="flex items-end gap-2">
+                        <span class="text-2xl font-bold">18.5%</span>
+                        <span class="text-xs text-green-400 mb-1">▲ 4.2%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section (Dark Mode) -->
+    <section id="problem" class="bg-zinc-900 text-white py-24 relative clip-slant">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-semibold mb-6">Great food isn't enough anymore.</h2>
+                    <p class="text-zinc-400 text-lg leading-relaxed mb-8">
+                        The Swiggy and Zomato algorithms are complex. Most restaurant owners are stuck in a loop of high commissions and invisible listings, hoping a 60% discount will save the day.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="iconify text-red-500 mt-1" data-icon="lucide:x-circle" data-width="20"></span>
+                            <span class="text-zinc-300">Buried on page 4 of search results</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="iconify text-red-500 mt-1" data-icon="lucide:x-circle" data-width="20"></span>
+                            <span class="text-zinc-300">Bleeding profits on "Gold" discounts</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="iconify text-red-500 mt-1" data-icon="lucide:x-circle" data-width="20"></span>
+                            <span class="text-zinc-300">High traffic, zero orders (low conversion)</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="grid gap-4">
+                    <!-- Pain Card 1 -->
+                    <div class="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition-colors">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded-full bg-red-500/20 flex items-center justify-center text-red-500">
+                                <span class="iconify" data-icon="lucide:ghost" data-width="20"></span>
+                            </div>
+                            <h3 class="text-lg font-medium">Ghost Kitchen Syndrome</h3>
+                        </div>
+                        <p class="text-sm text-zinc-400">You exist, but nobody sees you. Without SEO keywords, your kitchen is invisible to hungry customers.</p>
+                    </div>
+
+                    <!-- Pain Card 2 -->
+                    <div class="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition-colors translate-x-4 md:translate-x-8">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded-full bg-orange-500/20 flex items-center justify-center text-orange-500">
+                                <span class="iconify" data-icon="lucide:percent" data-width="20"></span>
+                            </div>
+                            <h3 class="text-lg font-medium">The Discount Trap</h3>
+                        </div>
+                        <p class="text-sm text-zinc-400">Running 60% OFF improves volume but kills margins. You're working harder for less money.</p>
+                    </div>
+
+                    <!-- Pain Card 3 -->
+                    <div class="bg-white/5 border border-white/10 p-6 rounded-xl hover:bg-white/10 transition-colors">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-500">
+                                <span class="iconify" data-icon="lucide:image-off" data-width="20"></span>
+                            </div>
+                            <h3 class="text-lg font-medium">Unappealing Presence</h3>
+                        </div>
+                        <p class="text-sm text-zinc-400">Generic photos and messy menu structures confuse customers and send them to competitors.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Bento Grid Section -->
+    <section id="solution" class="py-24 bg-zinc-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-5xl font-semibold mb-4 text-zinc-900">We don't guess.<br>We engineer growth.</h2>
+                <p class="text-zinc-500">Our data-driven approach specifically for Indian food aggregators.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[minmax(250px,auto)]">
+                
+                <!-- Listing Optimization (Large) -->
+                <div class="md:col-span-2 bg-white p-8 rounded-2xl border border-zinc-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+                    <div class="relative z-10">
+                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 mb-6">
+                            <span class="iconify" data-icon="lucide:search" data-width="24"></span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Search Ranking Domination</h3>
+                        <p class="text-zinc-500 max-w-sm">We optimize your restaurant name, cuisine tags, and item descriptions with high-volume keywords so you appear first when locals search "Biryani" or "Pizza".</p>
+                    </div>
+                    <!-- Decorative BG -->
+                    <div class="absolute right-0 bottom-0 w-64 h-64 bg-gradient-to-tl from-orange-50 to-transparent rounded-tl-[100px]"></div>
+                </div>
+
+                <!-- Menu Engineering -->
+                <div class="bg-zinc-900 text-white p-8 rounded-2xl shadow-sm relative overflow-hidden flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center text-white mb-6">
+                            <span class="iconify" data-icon="lucide:layout-list" data-width="24"></span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Menu Psychology</h3>
+                        <p class="text-zinc-400 text-sm">Strategic categorization and pricing to increase Average Order Value (AOV).</p>
+                    </div>
+                </div>
+
+                <!-- Visuals -->
+                <div class="bg-white p-8 rounded-2xl border border-zinc-200 shadow-sm relative overflow-hidden group">
+                    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&amp;fit=crop&amp;w=600&amp;q=80')] bg-cover bg-center opacity-10 group-hover:opacity-20 transition-opacity"></div>
+                    <div class="relative z-10 h-full flex flex-col justify-end">
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-zinc-900 mb-4 shadow-sm">
+                            <span class="iconify" data-icon="lucide:camera" data-width="20"></span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-1">Visual Conversion</h3>
+                        <p class="text-zinc-500 text-sm">Thumbnail optimization that stops the scroll.</p>
+                    </div>
+                </div>
+
+                <!-- Analytics -->
+                <div class="md:col-span-2 bg-orange-600 text-white p-8 rounded-2xl shadow-sm relative overflow-hidden">
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-2">ROI-Focused Strategy</h3>
+                            <p class="text-orange-100 mb-6">We analyze your funnel: Impressions → Menu Visits → Cart Adds → Orders. We fix the leaks.</p>
+                            <ul class="space-y-2 text-sm text-orange-50">
+                                <li class="flex items-center gap-2">
+                                    <span class="iconify" data-icon="lucide:check" data-width="16"></span> Daily Performance Tracking
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <span class="iconify" data-icon="lucide:check" data-width="16"></span> Competitor Analysis
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-white/10 rounded-xl p-4 backdrop-blur-sm border border-white/20">
+                            <div class="flex justify-between items-center mb-4 border-b border-white/10 pb-2">
+                                <span class="text-sm font-medium">Weekly Growth</span>
+                                <span class="text-xs bg-green-500/20 text-green-100 px-2 py-1 rounded">+24%</span>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="h-2 bg-white/20 rounded-full w-3/4"></div>
+                                <div class="h-2 bg-white/20 rounded-full w-full"></div>
+                                <div class="h-2 bg-white/20 rounded-full w-5/6"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Results / Social Proof -->
+    <section id="results" class="py-24 bg-white border-y border-zinc-100">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-semibold mb-6">Numbers that feed the business.</h2>
+                    <p class="text-zinc-500 mb-8">
+                        We don't just optimize for vanity metrics. We optimize for the cash register. Our partners see measurable results within the first 30 days.
+                    </p>
+                    <div class="flex flex-col gap-4">
+                        <div class="border-l-2 border-orange-500 pl-4">
+                            <blockquote class="text-lg text-zinc-900 font-medium mb-2">"Our cloud kitchen was doing 15 orders a day. Within a month of Plateup's optimization, we hit 45 orders daily without increasing ad spend."</blockquote>
+                            <cite class="text-sm text-zinc-500 not-italic">— Rohan K., Founder, The Bowl Company</cite>
+                        </div>
+                        <div class="border-l-2 border-zinc-200 pl-4">
+                            <blockquote class="text-lg text-zinc-900 font-medium mb-2">"They understand the Zomato algorithm better than Zomato support does."</blockquote>
+                            <cite class="text-sm text-zinc-500 not-italic">— Sarah M., Cafe Owner</cite>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-zinc-50 p-6 rounded-xl text-center">
+                        <div class="text-4xl font-bold text-orange-600 mb-2">2.5x</div>
+                        <div class="text-sm text-zinc-500 font-medium uppercase tracking-wide">Avg. Order Growth</div>
+                    </div>
+                    <div class="bg-zinc-50 p-6 rounded-xl text-center">
+                        <div class="text-4xl font-bold text-zinc-900 mb-2">40%</div>
+                        <div class="text-sm text-zinc-500 font-medium uppercase tracking-wide">Increase in Views</div>
+                    </div>
+                    <div class="bg-zinc-50 p-6 rounded-xl text-center">
+                        <div class="text-4xl font-bold text-zinc-900 mb-2">15%</div>
+                        <div class="text-sm text-zinc-500 font-medium uppercase tracking-wide">Better AOV</div>
+                    </div>
+                    <div class="bg-zinc-50 p-6 rounded-xl text-center">
+                        <div class="text-4xl font-bold text-orange-600 mb-2">0</div>
+                        <div class="text-sm text-zinc-500 font-medium uppercase tracking-wide">Ad Spend Required</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us -->
+    <section class="py-20 bg-zinc-900 text-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="text-sm font-medium text-orange-500 uppercase tracking-widest mb-4">Why Plateup?</h2>
+            <h3 class="text-3xl md:text-5xl font-semibold mb-12">Built for the Indian Food Market</h3>
+            
+            <div class="flex flex-wrap justify-center gap-4 md:gap-8 opacity-80">
+                <div class="flex items-center gap-2 bg-white/5 px-6 py-3 rounded-full border border-white/10">
+                    <span class="iconify" data-icon="lucide:map-pin" data-width="18"></span>
+                    <span>Swiggy &amp; Zomato Specialists</span>
+                </div>
+                <div class="flex items-center gap-2 bg-white/5 px-6 py-3 rounded-full border border-white/10">
+                    <span class="iconify" data-icon="lucide:store" data-width="18"></span>
+                    <span>Multi-Outlet Support</span>
+                </div>
+                <div class="flex items-center gap-2 bg-white/5 px-6 py-3 rounded-full border border-white/10">
+                    <span class="iconify" data-icon="lucide:indian-rupee" data-width="18"></span>
+                    <span>No Ad Waste</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="audit" class="py-24 bg-orange-600 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <h2 class="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight">Your Restaurant Deserves <br>More Orders.</h2>
+            <p class="text-orange-100 text-xl mb-10 max-w-2xl mx-auto">You focus on the food. We'll make sure the whole city orders it. Get a free audit of your current listing health today.</p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <button class="bg-white text-orange-600 text-lg px-8 py-4 rounded-lg font-semibold hover:bg-zinc-100 transition-colors shadow-xl w-full sm:w-auto">
+                    Book Free Optimization Call
+                </button>
+                <button class="bg-transparent border border-white text-white text-lg px-8 py-4 rounded-lg font-medium hover:bg-white/10 transition-colors w-full sm:w-auto">
+                    View Success Stories
+                </button>
+            </div>
+            <p class="mt-6 text-sm text-orange-200 opacity-80">No commitment required. 100% Free Audit.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-zinc-950 text-zinc-500 py-12 border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <span class="iconify text-zinc-100" data-icon="lucide:utensils-crossed" data-width="18"></span>
+                <span class="text-zinc-100 font-semibold tracking-tight">PLATEUP.SOLUTIONS</span>
+            </div>
+            <div class="text-sm">
+                © 2024 Plateup Solutions. All rights reserved.
+            </div>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-white transition-colors"><span class="iconify" data-icon="lucide:instagram" data-width="20"></span></a>
+                <a href="#" class="hover:text-white transition-colors"><span class="iconify" data-icon="lucide:linkedin" data-width="20"></span></a>
+                <a href="#" class="hover:text-white transition-colors"><span class="iconify" data-icon="lucide:twitter" data-width="20"></span></a>
+            </div>
+        </div>
+    </footer>
+
+
+</body></html>
