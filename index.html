@@ -43,30 +43,51 @@
     <div class="grain-overlay"></div>
 
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-40 bg-white/80 backdrop-blur-md border-b border-zinc-100">
-        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-            <a href="#" class="text-lg font-semibold tracking-tighter flex items-center gap-2">
-                <span class="iconify text-orange-600" data-icon="lucide:utensils-crossed" data-width="20"></span>
-                PLATEUP.SOLUTIONS
-            </a>
-            
-            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-500">
-                <a href="#problem" class="hover:text-zinc-900 transition-colors">The Problem</a>
-                <a href="#solution" class="hover:text-zinc-900 transition-colors">Our Approach</a>
-                <a href="#results" class="hover:text-zinc-900 transition-colors">Results</a>
-            </div>
+<!-- NAVBAR -->
+<nav class="fixed top-0 w-full z-40 bg-white/80 backdrop-blur-md border-b border-zinc-100">
+  <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-2 font-semibold tracking-tight">
+      <span class="iconify text-orange-600" data-icon="lucide:utensils-crossed"></span>
+      PLATEUP.SOLUTIONS
+    </a>
 
-            <a href="#audit" class="hidden md:flex items-center gap-2 bg-zinc-900 text-white px-4 py-2 rounded-full text-xs font-medium hover:bg-orange-600 transition-colors">
-                Book Audit
-                <span class="iconify" data-icon="lucide:arrow-right" data-width="14"></span>
-            </a>
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-500">
+      <a href="#problem" class="hover:text-zinc-900">The Problem</a>
+      <a href="#solution" class="hover:text-zinc-900">Our Approach</a>
+      <a href="#results" class="hover:text-zinc-900">Results</a>
+    </div>
 
-            <!-- Mobile Menu Icon -->
-            <button class="md:hidden text-zinc-900">
-                <span class="iconify" data-icon="lucide:menu" data-width="24"></span>
-            </button>
-        </div>
-    </nav>
+    <a href="#audit" class="hidden md:flex bg-zinc-900 text-white px-4 py-2 rounded-full text-xs hover:bg-orange-600">
+      Book Audit
+    </a>
+
+    <!-- Mobile Button -->
+    <button id="menuBtn" class="md:hidden">
+      <span class="iconify" data-icon="lucide:menu" data-width="26"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div id="mobileMenu" class="fixed inset-0 bg-white z-50 translate-y-full transition-transform duration-300 md:hidden">
+  <div class="flex justify-between items-center px-6 h-16 border-b">
+    <span class="font-semibold">Menu</span>
+    <button id="closeBtn">
+      <span class="iconify" data-icon="lucide:x" data-width="26"></span>
+    </button>
+  </div>
+
+  <div class="px-6 py-10 flex flex-col gap-6 text-lg font-medium">
+    <a href="#problem" class="mobile-link">The Problem</a>
+    <a href="#solution" class="mobile-link">Our Approach</a>
+    <a href="#results" class="mobile-link">Results</a>
+    <a href="#audit" class="mt-6 bg-orange-600 text-white px-6 py-4 rounded-lg text-center">
+      Book Free Audit
+    </a>
+  </div>
+</div>
+
 
     <!-- Hero Section -->
     <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
@@ -414,4 +435,31 @@
     </footer>
 
 
-</body></html>
+</body>
+
+
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const closeBtn = document.getElementById("closeBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const links = document.querySelectorAll(".mobile-link");
+
+  function openMenu() {
+    mobileMenu.classList.remove("translate-y-full");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeMenu() {
+    mobileMenu.classList.add("translate-y-full");
+    document.body.style.overflow = "";
+  }
+
+  menuBtn.addEventListener("click", openMenu);
+  closeBtn.addEventListener("click", closeMenu);
+
+  links.forEach(link => {
+    link.addEventListener("click", closeMenu);
+  });
+</script>
+
+</html>
